@@ -1,0 +1,3 @@
+-- What is the average unemployment insurance given by US government for counties whose name start with either 'P' or 'A' like 'Pennington', 'Alexander', etc?
+select AVG(Unemployment_Insurance) from bigquery-public-data.sdoh_bea_cainc30.fips
+where GeoName LIKE 'P%' OR GeoName LIKE 'A%'
