@@ -1,0 +1,6 @@
+-- What is the level of employment in each county in the last five years, i.e., '2015-01-01' and '2020-12-31'?
+Select Total_employment
+, GeoName
+, Year From bigquery-public-data.sdoh_bea_cainc30.fips 
+Where Year between '2015-01-01' and '2020-12-31'
+order by GeoName;
