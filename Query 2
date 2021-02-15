@@ -1,0 +1,4 @@
+-- FIPS' aggregated information about GDP and its components for the County, Surry NC for the calendar year 2017:
+select * from bigquery-public-data.sdoh_bea_cainc30.fips
+where GeoName = "Surry, NC"
+AND Year between '2017-01-01' AND '2017-12-31'
