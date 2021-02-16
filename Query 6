@@ -1,0 +1,11 @@
+-- Finding the total employment (Farm_proprietors_employment + Wage_and_salary_employment + Nonfarm_proprietors_employment) in the county 'Surry, NC' over the years, 
+-- and then checking whether or not, the sum (total) does match the 'Total_employment' figures provided in the data by FIPS?
+select Year
+, Farm_proprietors_employment 
+, Nonfarm_proprietors_employment 
+, Wage_and_salary_employment 
+, (Farm_proprietors_employment + Wage_and_salary_employment + Nonfarm_proprietors_employment) as total
+, Total_employment 
+from bigquery-public-data.sdoh_bea_cainc30.fips
+where GeoName = "Surry, NC"
+order by Year 
