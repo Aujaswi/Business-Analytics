@@ -1,0 +1,6 @@
+-- What is the average contribution made by employers and US government to 'Pension and Insurance fund' and Unemployment fund respectively in the year 2017? 
+select avg(Employer_contrib_pension_and_insurance) as avg_employer_contr_PI
+, avg(Unemployment_insurance) as avg_unemploy_Insurance
+from bigquery-public-data.sdoh_bea_cainc30.fips
+where Year between '2017-01-01' AND '2017-12-31'
+;
