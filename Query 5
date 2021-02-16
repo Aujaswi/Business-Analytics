@@ -1,0 +1,7 @@
+-- Identifying the County's name on '01-01-2017' by just using the (numeric) GeoFips number, i.e., US County Geoids. 
+select GeoName from bigquery-public-data.sdoh_bea_cainc30.fips
+where GeoFips = ('37171')
+and Year = ('2017-01-01')
+GROUP BY
+GeoName
+;
