@@ -1,0 +1,6 @@
+-- 
+select *
+from bigquery-public-data.census_bureau_usa.population_by_zip_2000
+inner join bigquery-public-data.census_bureau_usa.population_by_zip_2010
+using(zipcode)
+;
