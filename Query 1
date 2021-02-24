@@ -1,3 +1,5 @@
+-- The dataset for query numbers 1 to 7 was created by the Bureau of Economic Analysis (BEA). 
+It provides a county level view of income, wages, proprietors' income, dividends, interest, rents, and government benefits, including a number of federal and state-level subsidies.
 -- What is maximum contribution made by employers in all states for employees' pension and insurance fund? 
 select max(Employer_contrib_pension_and_insurance),
 from bigquery-public-data.sdoh_bea_cainc30.fips
