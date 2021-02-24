@@ -1,3 +1,5 @@
+-- For query numbers 8, 9, and 10, the data set used is the United States census count which is a count of every resident of the US. The census occurs every 10 years and 
+is conducted by the United States Census Bureau.
 -- Extracting the data based on 'geo_id' (common column) from USA census conducted over two years, i.e., 2000 and 2010: 
 select *
 from bigquery-public-data.census_bureau_usa.population_by_zip_2000
