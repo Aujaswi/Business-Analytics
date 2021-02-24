@@ -1,0 +1,5 @@
+-- How many people in the minimum_age category are below thirty years of age for US population census 2000?
+select count(minimum_age) as below_thirty
+from bigquery-public-data.census_bureau_usa.population_by_zip_2000
+where 'minimum_age' >= '30'
+;
